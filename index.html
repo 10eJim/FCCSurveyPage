@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Page</title>
+  <link rel="stylesheet" type="text/css" href="survey.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+  <div id="titleImage">
+  <h1 id="title">Reader Survey</h1>
+  </div>
+  <div id="form-outer">
+  <p id="description">
+    Let us know what you want from Letgo?
+  </p>
+  <form id="survey-form" method="GET" action="#">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="mediumPref-label">How would you like to recieve material from Letgo?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="mediumPref" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="Web">Website/Blog</option>
+      <option value="Social">Social Media Posts</option>
+      <option value="Youtube">Youtube Channel</option>
+      <option value="Print">Print Magazine</option>
+      <option value="Other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="readerInterest-label">* How would you rate your interest in reading about minimalist living practices?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Very Interested<input name="radio-buttons" value="1"  type="radio" class="readerInterest" ></label></li>
+          <li class="radio"><label>Interested<input name="radio-buttons" value="2"  type="radio" class="readerInterest" ></label></li>
+          <li class="radio"><label>Curious/Browsing<input name="radio-buttons" value="3"  type="radio" class="readerInterest" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="subjects-label">Subjects you'd be interested in seeing material about in Letgo:<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="subjects" style="list-style: none;">
+          <li class="checkbox"><label><input name="subjects" value="1" type="checkbox" class="subjects">Minimalist Design</label></li>
+          <li class="checkbox"><label><input name="subjects" value="2" type="checkbox" class="subjects">Organization Practices</label></li>
+          <li class="checkbox"><label><input name="subjects" value="3" type="checkbox" class="subjects">Scheduling Simplification</label></li>
+          <li class="checkbox"><label><input name="subjects" value="4" type="checkbox" class="subjects">Exercise/Health Practices</label></li>
+          <li class="checkbox"><label><input name="subjects" value="5" type="checkbox" class="subjects">Stress Reduction</label></li>
+          <li class="checkbox"><label><input name="subjects" value="6" type="checkbox" class="subjects">Introspection</label></li>
+          <li class="checkbox"><label><input name="subjects" value="7" type="checkbox" class="subjects">Goal Setting/Aspirations</label></li>
+          <li class="checkbox"><label><input name="subjects" value="8" type="checkbox" class="subjects">Community</label></li>
+          <li class="checkbox"><label><input name="subjects" value="9" type="checkbox" class="subjects">Other</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" name="comments" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  </div>
+
+</body>
+</html>
